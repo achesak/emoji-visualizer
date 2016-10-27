@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Emoji Visualizer Demo</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
+        <script type="text/javascript" src="emojivisualizer.js"></script>
+        <style type="text/css">
+            img.emoji {
+              margin: 0px !important;
+              display: inline !important;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                startVisualizer("visualization", "player", 16);
+            });
+        </script>
+    </head>
+
+    <body>
+        
+        <div style="height: 200px; width:100%">
+            <p>"Furious Freak"<br />
+               Kevin MacLeod (incompetech.com)<br />
+               Licensed under Creative Commons: By Attribution 3.0<br />
+               http://creativecommons.org/licenses/by/3.0/<br />
+            </p>
+            <audio id="player" src="furiousfreak.mp3" controls preload="auto"></audio>
+            <div id="visualization"></div>
+        </div>
+
+    </body>
+
+</html>
